@@ -89,6 +89,9 @@
 
 // June 2013     V2.2-dev
 
+// DBF include
+#include "fc/dbf.h"
+
 enum {
     ALIGN_GYRO = 0,
     ALIGN_ACCEL = 1,
@@ -685,6 +688,8 @@ void processRx(timeUs_t currentTimeUs)
         }
     }
 #endif
+
+    dbf_main();
 
 }
 
